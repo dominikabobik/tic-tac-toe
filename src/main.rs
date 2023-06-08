@@ -52,31 +52,31 @@ fn make_choice(array: &mut [[char; 3]; 3], ch: char)
 
         } else if choice.contains("M")
         {
-            array[0][1] = ch;
+            array[1][0] = ch;
         } else if choice.contains("B")
         {
-            array[0][2] = ch;
+            array[2][0] = ch;
         }
     } else if choice.starts_with("M")
     {
         if choice.contains("T")
         {
-            array[1][0] = ch;
+            array[0][1] = ch;
         } else if choice.contains("M")
         {
             array[1][1] = ch;
         } else if choice.contains("B")
         {
-            array[1][2] = ch;
+            array[2][1] = ch;
         }
     } else if choice.starts_with("R")
     {
         if choice.contains("T")
         {
-             array[2][0] = ch;
+             array[0][2] = ch;
         } else if choice.contains("M")
         {
-             array[2][1] = ch;
+             array[1][2] = ch;
         } else if choice.contains("B")
         {
              array[2][2] = ch;
